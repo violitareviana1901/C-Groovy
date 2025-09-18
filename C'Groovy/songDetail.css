@@ -1,0 +1,244 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar-container {
+  background-color: #79addc;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-items {
+  margin: 10px;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.dropdown:hover {
+  position: relative;
+  display: inline-block;
+  background-color: #F2B5D4;
+  border-radius: 5px;
+  min-width: 145px;
+  
+  text-align: center;
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: all 0.5s ease;
+}
+
+.navbar-user{
+    margin: 6px 0px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F2B5D4;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-weight:bold;
+}
+
+.dropdown-content a {
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Trebuchet MS', sans-serif;
+  min-width: 120px;
+}
+
+.dropdown-content a:hover {
+  background-color: #e39cbf;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logo {
+  height: 80px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.active-navbar {
+  background-color: #F2B5D4;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* KONTEN  */
+ 
+.content {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    flex: 1;
+}
+  
+.song-detail {
+    text-align: center;
+}
+  
+.song-image {
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+  
+.song-title {
+    font-size: 24px;
+    color: #003366;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+  
+.artist {
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #222;
+    margin: 5px 0 15px;
+}
+  
+.description {
+    font-size: 14px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 auto 20px;
+    color: #222;
+    padding: 0 10px;
+    max-width: 500px; 
+    text-align: center; 
+  }
+  
+.lyrics-heading {
+    font-size: 24px;
+    color: #003366;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  
+.lyrics {
+    font-size: 14px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+  
+.audio-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #e6f0fa;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+  
+ #audio-player span {
+    font-size: 14px;
+}
+  
+#seek-bar {
+    width: 100px;
+}
+  
+.footer{
+    background-color: #79addc;
+    display: flex;
+    width: 100%;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h5{
+    margin: 10px 5px;
+}
+
+.ig{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+/* RESPONSIVE DISINI */
+/* LAPTOP */
+@media screen and (max-width: 1024px) {
+  .navbar-menu {
+      flex-direction: row;
+      gap: 10px;
+    }
+  .nav-btn {
+    font-size: 24px;
+  }
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    padding: 10px;
+  }
+
+  .navbar-menu {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .nav-btn {
+    font-size: 24px;
+  }
+}
+
+/* HP */
+@media screen and (max-width: 480px) {
+    .navbar-container {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+
+  .footer{
+    padding: 0px 10px;
+    width: 100%;
+  }
+}
+

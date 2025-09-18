@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./register.css">
+    <link rel="icon" href="Assets/Logo.png">
+</head>
+<body>
+    <form id="regist-container" onsubmit="return check_validate()" action="./home.html">
+        <h3>Register</h3>
+        <div class="inputform">
+            <h5>Full Name</h5>
+            <input type="text" id="inpName"> 
+
+            <h5>Email</h5>
+            <input type="email" id="inpEmail" > 
+
+            <h5>Phone Number</h5>
+            <input type="text" id="inpPhoneNum"> 
+
+            <h5>Age</h5>
+            <input type="text" id="inpAge" > 
+
+            <h5>Password</h5>
+            <input type="password" id="inpPass"> 
+
+            <h5>Confirm Password</h5>
+            <input type="password" id="inpConfirmPass" > 
+
+            <h5>Gender</h5>
+            <div class="gender-container">
+                <div class="male">
+                    <input type="radio" name="gender" id="inpmale">Male
+                </div>
+                <div class="female">  
+                    <input type="radio" name="gender" id="inpfemale">Female
+                </div>
+            </div>
+
+            <button type="submit" id="registbtn">Register</button>
+        </div>
+    </form>
+    <script src="./register.js"></script>
+</body>
+</html>
